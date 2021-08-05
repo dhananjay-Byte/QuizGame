@@ -1,0 +1,35 @@
+<!Doctype Html>
+<html>
+    <head>
+        <link rel="stylesheet" href="quizgame.css">
+    </head>
+    <body>
+        <div class="start-btn">
+            <button id="start1">START</button> 
+        </div>
+        <div id="counter" class="display1"><a>Correct:</a><span>0</span></div>
+        <section class="Que-card">
+            <div class="Ques display1">
+                <p class="Que-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <ul id="list">
+                    <li onclick="check(0)">answer1</li>
+                    <li onclick="check(1)">answer2</li>
+                    <li onclick="check(2)">answer3</li>
+                    <li onclick="check(3)">answer4</li>
+                </ul>
+                <div class="btn-primary">
+                    <button id="start">Restart</button>
+                   <button id="next-btn">Next</button>
+                </div>
+            </div>
+        </section>
+        <div id="result" class="display1">
+          <h1>NICE WORK!</h1>
+          <h2>You are at</h2>
+          <span id="ans" style="display:flex; justify-content: center;"></span>
+        </div>
+        <audio src="15.mp3" autoplay loop></audio>
+    </body>
+    <script src="async.js"></script>
+</html>
